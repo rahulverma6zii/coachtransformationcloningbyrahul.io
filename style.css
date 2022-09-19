@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&family=Roboto:wght@500&display=swap");
+* {
+  transition-duration: 2s;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/* font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif; */
+:root {
+  --primary-color: rgb(255, 89, 54);
+}
+.primary-text {
+  color: white;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+}
+.secondary-text {
+  font-size: 25px;
+  color: var(--primary-color);
+}
+
+div.navbar {
+  top: 10px;
+  position: absolute;
+  z-index: +2;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#contact {
+  width: 40%;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+#content-section {
+  width: 100%;
+  top: 100px;
+  position: absolute;
+}
+#content {
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.buttongroup {
+  display: flex;
+  justify-content: space-between;
+}
+.primary-button {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 12px;
+
+  line-height: 25px;
+  width: auto;
+  border: 1px solid var(--primary-color);
+  border-radius: 40px;
+  transition-duration: 3s;
+}
+.secondary-button {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 25px;
+  width: auto;
+  transition-duration: 3s;
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 40px;
+}
+.primary-button:hover,
+.secondary-button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.2);
+  transition-duration: 2s;
+}
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.fa,
+.fas {
+  margin: auto;
+  color: var(--primary-color);
+  font-size: 30px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  padding: 20px;
+}
+img.cimage {
+  filter: blur(2);
+}
+section {
+  height: 100vh;
+  margin-top: 30px;
+}
+#section2 {
+  display: flex;
+  justify-content: space-around;
+}
+.leftdiv {
+  width: 60%;
+}
+#section2 > .leftdiv {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+form#enquire {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 300px;
+}
+input,
+option {
+  font-size: 10px;
+  width: 100%;
+  height: 40px;
+  border: 0.5px solidy grey;
+  margin-bottom: 5px;
+}
+#section3 {
+  background-image: url("img/section-2.jpg");
+  color: white;
+}
+#section3 p {
+  font-size: 20px;
+}
+.card {
+  background: none;
+}
+.card-body > .secondary-text {
+  font-size: 20px;
+}
+#section4 {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+#section4 > p {
+  font-size: 20px;
+  word-spacing: 1px;
+}
+.flexbox {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.flexbox > div {
+  width: 48%;
+}
+.flexbox img {
+  width: 100%;
+  height: 300px;
+}
+ul#list > li {
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+#section5 h1,
+h2 {
+  font-weight: 400;
+  text-align: center;
+}
+#section5 table {
+  border: 20px solid#f9fafb;
+  width: 90%;
+  margin: auto;
+  background-color: #f9fafb;
+}
+/* section 6 */
+#section6 {
+  height: 90vh;
+  margin-top: 0px;
+  background-image: url("https://img.freepik.com/premium-photo/black-gold-circle-frame-image-background-placing-text-teaching-trades-3d-illustration_357568-2982.jpg?w=1060");
+  background-position: center;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+hr {
+  width: 200px;
+  color: white;
+  background-color: white;
+}
+#section6 .fa {
+  margin: 0px;
+  font-size: 10px;
+  transition-duration: 2s;
+}
+#section6 .fa:hover {
+  transition-duration: 2s;
+  transform: rotate(-100deg) scale(1.2);
+  cursor: pointer;
+}
+#section6 p {
+  margin: auto;
+  width: 80%;
+}
+#section7 {
+  height: 30vh;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+}
+#section8 {
+  height: max-content;
+}
+#section8 .card {
+  width: 30%;
+}
+#section8 .card img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+#section9 {
+  margin-top: 300px;
+  background-image: url("img/section-3.jpg");
+}
+#section10 {
+  height: 300px;
+}
+#section10 img {
+  transform: scale(0.5);
+}
+.certificate {
+  display: flex;
+  justify-content: space-around;
+}
+.card:hover {
+  box-shadow: 10px 10px 10px grey;
+  transform: scale(1.1);
+}
+footer {
+  color: white;
+  background-image: url("https://img.freepik.com/premium-photo/image-audience-hall-business-center-photo-with-copy-space_160672-22702.jpg?w=900");
+  display: flex;
+  justify-content: space-around;
+}
+footer > div {
+  width: 50%;
+}
+footer form#enquire {
+  width: 60%;
+}
+footer div.rightfooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .fa {
+  padding: 10px;
+  border: none;
+}
+#copyright {
+  background-color: black;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  height: 50px;
+}
+.fixpos {
+  position: fixed;
+  top: 300px;
+  left: 0px;
+  background-color: var(--primary-color);
+  color: white;
+}
